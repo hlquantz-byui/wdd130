@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+:root{
+  --primary-color: #8eb8e5;
+  --secondary-color: #7b886f;
+  --accent1-color: #2e282a;
+  --accent2-color: #a4f9c8;
+
+  --heading-font: 'Noto Sans Mono', Courier, monospace;
+  --paragraph-font: 'Noto Sans Mono', Courier, monospace;
+
+  --nav-background-color: #8eb8e5;
+  /* nav-link-color and nav-hover-color are identical due to contrast concerns */
+  --nav-link-color: #2e282a;
+  --nav-hover-link-color: #2e282a;
+  --nav-hover-background-color: #a4f9c8;
+}
+
+body{
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font);
+  color: var(--primary-color)
+}
+
+header{
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+p{
+  padding: 25px;
+}
+
+nav{
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a{
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited{
+  color: var(--nav-link-color);
+}
+
+nav a:hover{
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
