@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-p, figcaption {
+p, figcaption, form, button {
   font-family: var(--paragraph-font);
   color:var(--secondary-color)
 }
@@ -51,6 +51,11 @@ a {
   font-family: var(--paragraph-font)
 }
 
+a:hover{
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
 header {
   background-color: var(--accent1-color);
   display: grid;
@@ -58,7 +63,26 @@ header {
   align-items: center;
 }
 
+form{
+  width: 650px;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
 
+button{
+  width: 100%;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 6px;
+  padding: 4px;
+  font-size: 15px;
+  color: var(--accent1-color);
+}
 
 header img{
   margin-left: 100px;
@@ -86,6 +110,15 @@ footer {
 
 footer p{
   margin-right: 100px;
+}
+
+footer a{
+  color: var(--nav-link-color)
+}
+
+footer a:hover{
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 footer img{
@@ -193,4 +226,49 @@ footer img{
 .adventure-pictures img{
   max-width: 172px;
   height: auto;
+}
+
+.info{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.employees{
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.employee-pictures{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.employees img{
+  max-width: 250px;
+  height: auto;
+}
+
+.contact-us{
+  border: 1px solid var(--accent2-color);
+  border-radius: 5px;
+  margin: 5px auto 15px;
+}
+
+.name, .email, .reason, .message{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.subscribe label{
+  margin-left: 5px;
 }
