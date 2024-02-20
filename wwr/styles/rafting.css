@@ -54,6 +54,7 @@ a {
 a:hover{
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  border-radius: 3px;
 }
 
 header {
@@ -271,4 +272,38 @@ footer img{
 
 .subscribe label{
   margin-left: 5px;
+}
+
+.news-and-call{
+  display: flex;
+  flex-direction: row;
+}
+
+.reservation{
+  background-color: var(--accent1-color);
+  border-radius: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.reservation a:hover{
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.features{
+  margin: 20px 0px 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.features img{
+  width: auto;
+  height: 320px;
 }
