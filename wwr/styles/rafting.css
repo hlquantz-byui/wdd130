@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-p, figcaption, form, button {
+p, figcaption, form, button, th, td {
   font-family: var(--paragraph-font);
   color:var(--secondary-color)
 }
@@ -97,6 +97,20 @@ nav{
 section{
   margin-left: 15px;
   margin-right: 15px;
+}
+
+table{
+  width: 920px;
+  border: solid 1px var(--nav-hover-background-color);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid var(--nav-hover-background-color);
+  text-align: left;
+  padding: 8px;
 }
 
 footer {
@@ -285,7 +299,6 @@ footer img{
   margin-left: 10px;
   display: flex;
   align-items: center;
-  align-content: center;
 }
 
 .reservation a:hover{
@@ -306,4 +319,29 @@ footer img{
 .features img{
   width: auto;
   height: 320px;
+}
+
+.reserve-trip{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  border-radius:10px;
+}
+
+.reserve-trip h2{
+  color: var(--accent1-color);
+}
+
+.reserve-trip a:hover{
+  text-decoration: underline var(--accent1-color);
+}
+
+.trips{
+  display: flex;
+}
+
+.trips img{
+  width: 300px;
+  height: auto;
 }
